@@ -8,11 +8,11 @@ function ContactCard({ contact, toggleFavorite }) {
             <div className="card">
                 <h3>{contact.name}</h3>
                 <p>{contact.phone}</p>
-            </div>
             <LuStar
                 className={`star ${contact.favorite && "yellow-star"}`}
                 onClick={() => toggleFavorite(contact.id)}
-            />
+                />
+                </div>
         </div>
     );
 }
